@@ -2,7 +2,7 @@ resource "aws_rds_cluster" "ecommerce-db" {
   cluster_identifier = "ecommerce-db"
   engine            = "aurora-mysql"
   engine_version    = "5.7.mysql_aurora.2.07.9"
-  database_name     = "mydb"
+  database_name     = "ecommerce-db"
   master_username   = var.db_username
   master_password   = var.db_password
 
